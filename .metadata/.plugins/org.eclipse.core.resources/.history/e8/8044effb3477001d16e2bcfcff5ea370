@@ -1,0 +1,15 @@
+package Dao;
+
+import java.util.List;
+
+import Bean.Student;
+
+public interface StudentDao {
+
+	
+	public boolean RegisteredStudent(Student student);
+	public Student getStudentById(int roll);
+	public String RemoveStudentBYId(int roll);
+	public List<Student> getAllStudent();
+	
+}

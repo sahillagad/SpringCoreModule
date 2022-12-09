@@ -1,0 +1,23 @@
+package Com.Masai2;
+
+
+public class B {
+
+	 
+	
+	 
+	public void funB(){
+		
+		System.err.println("I am Inside The Fun B oF Class B"); 	
+	
+		 A.funA();
+	
+	}
+	
+	public void funC(){
+	
+		System.err.println("I am Inside The Fun C oF Class B"); 		
+ 	
+
+	}
+}

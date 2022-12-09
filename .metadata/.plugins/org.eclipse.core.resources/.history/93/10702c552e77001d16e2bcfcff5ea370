@@ -1,0 +1,16 @@
+package Dao;
+
+import Bean.Student;
+
+public class StudentDaoImpl implements StudentDao{
+
+	@Override
+	public boolean RegisteredStudent(Student student) {
+		
+		return null;
+	}
+
+	
+	
+}
+

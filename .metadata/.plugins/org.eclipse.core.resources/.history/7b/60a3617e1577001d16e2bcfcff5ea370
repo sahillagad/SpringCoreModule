@@ -1,0 +1,24 @@
+package com.masai;
+
+import java.util.Map;
+
+public class A {
+
+
+	private Map<Integer,Student> map;
+
+	public void setMap(Map<Integer, Student> map) {
+		this.map = map;
+	}
+	
+	
+	
+	public void showA() {
+		sy
+		
+		
+		
+	}
+	
+
+}

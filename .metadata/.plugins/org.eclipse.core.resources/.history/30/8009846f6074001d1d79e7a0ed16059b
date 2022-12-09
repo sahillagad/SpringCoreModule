@@ -1,0 +1,11 @@
+package Com.masai1;
+
+public class Bike {
+
+	public void rider() {
+		
+		System.out.println("Ride Start...");
+
+	}
+	
+}

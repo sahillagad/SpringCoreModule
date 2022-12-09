@@ -1,0 +1,9 @@
+package question_5;
+
+public interface person  {
+
+	
+	     public void funP();
+	
+	
+}

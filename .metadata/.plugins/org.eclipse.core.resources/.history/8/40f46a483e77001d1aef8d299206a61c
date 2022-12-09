@@ -1,0 +1,87 @@
+package Dao;
+
+import java.util.List;
+
+import javax.persistence.EntityManager;
+
+import Bean.Student;
+import DATABASE.EMUtility;
+
+
+public class StudentDaoImpl implements StudentDao{
+
+	@Override
+	public void persistStudent(Student student) {
+
+       EntityManager em= EMUtility.provideEntityManager();		
+	
+       
+        em.getTransaction().begin();
+        
+        
+        em.persist(student);
+        
+        
+        em.getTransaction().commit();
+	}
+	
+
+	@Override
+	public Student findStudent(int eid) {
+	EntityManager em=EMUtility.provideEntityManager();
+	Student student=null;
+	
+       student=em.find(Student.class, eid);	
+		return student;
+	}
+
+	@Override
+	public void updateStudent(Student student) {
+		
+		
+		EntityManager em=EMUtility.provideEntityManager();
+		
+		Student student2= findStudent(student.getRoll());
+		if(student2!=null) {
+		
+		    em.getTransaction().begin();
+		    
+		    student2.set   
+		
+		    em.getTransaction().commit();
+	
+		}
+		else {
+		
+			System.out.println("This Roll Number Student Is Not Present");
+		}
+		
+	}
+
+	@Override
+	public void deleteStudent(Student student) {
+		
+		EntityManager em=EMUtility.provideEntityManager();
+		
+		Student student2= findStudent(student.getRoll());
+		if(student2!=null) {
+		em.getTransaction().begin();
+		em.remove(student);
+		System.out.println("Student is remove");
+	
+		 em.getTransaction().commit();
+		}
+		else {
+			
+			System.out.println("This Roll Number Student Is Not Present");
+		}
+	}
+
+	
+	
+
+
+	
+	
+}
+

@@ -1,0 +1,35 @@
+package App.DataAccessLayer.copy;
+
+import javax.persistence.EntityManager;
+
+import Entity.Account;
+import Utility.EMUtility;
+import App.Utility.EMUtility;
+
+import App.Entity.Account ;
+import App.Utility.EMUtility;
+
+import App.Entity.Account ;
+public class DAOBean {
+	 
+	
+	public static Account findAccountById(int AccountId) { 
+		 Account account=null;
+		
+		EntityManager em=EMUtility.provideEntityManager();
+		
+	     account=em.find(Account.class, AccountId);
+		
+
+
+	     
+		return account;
+	}
+	
+	
+	
+	
+	
+	
+	
+}

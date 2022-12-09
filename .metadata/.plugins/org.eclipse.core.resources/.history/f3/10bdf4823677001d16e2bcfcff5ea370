@@ -1,0 +1,20 @@
+package Service;
+
+import Dao.StudentDao;
+
+public class StudentServiceImpl {
+
+	private StudentDao dao;
+
+	public void setDao(StudentDao dao) {
+		this.dao = dao;
+	}
+	
+	
+	
+
+	
+	
+	
+	
+}

@@ -1,0 +1,11 @@
+package Dao;
+
+import Bean.Student;
+
+public interface StudentService {
+
+	
+	public boolean RegisteredStudent(Student student);
+	
+	
+}

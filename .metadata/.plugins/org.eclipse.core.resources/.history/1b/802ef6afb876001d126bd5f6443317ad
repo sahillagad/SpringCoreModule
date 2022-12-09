@@ -1,0 +1,50 @@
+package SpringBeanLifeCycle;
+
+public class B {
+
+	int age;
+	String name;
+	
+	
+	public B() {
+		System.out.println("I am inside the Constructor");	
+	     System.err.println("AGE : "+age);
+	     System.err.println("Name : "+name);
+	}
+	
+	
+	
+	
+	
+	
+	public void setAge(int age) {
+	  System.out.println("Try TO Insert The Age");
+		
+		this.age = age;
+	}
+	public void setName(String name) {
+		  System.out.println("Try TO Insert The Name");
+		this.name = name;
+	}
+	
+	
+	
+	public void mySetUp() {
+		
+		System.out.println("I am inside the My Set Up");
+		System.out.println("Connection Craeted Logic");
+        System.out.println("Initialization Logic");
+		 
+		System.out.println("--------------------------"); 
+	}
+	
+	
+	public void showB() {
+		System.out.println("AGE : "+age);
+		System.err.println("NAME : "+name);
+		
+	}
+	
+	
+	 
+}

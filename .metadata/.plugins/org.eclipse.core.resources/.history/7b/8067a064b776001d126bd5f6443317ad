@@ -1,0 +1,5 @@
+package SpringBeanLifeCycle;
+
+public class B {
+
+}

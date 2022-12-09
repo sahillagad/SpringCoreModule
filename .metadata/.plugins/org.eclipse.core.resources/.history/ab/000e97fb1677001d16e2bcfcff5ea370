@@ -1,0 +1,48 @@
+package com.masai;
+
+public class Student {
+
+	private int rollNo;
+	private String name;
+	private int marks;
+	
+	
+	
+	public Student(int rollNo, String name, int marks) {
+		super();
+		this.rollNo = rollNo;
+		this.name = name;
+		this.marks = marks;
+	}
+	
+	
+	
+	public int getRollNo() {
+		return rollNo;
+	}
+
+
+
+	public String getName() {
+		return name;
+	}
+
+
+
+	public int getMarks() {
+		return marks;
+	}
+
+
+
+	public void showA() {
+		
+		System.out.println("I am inside the showA method in the Student Class");
+		
+		System.out.println("Roll No : "+rollNo);
+		System.out.println("Name    : "+name);
+		System.out.println("Marks   : "+marks);
+	    System.out.println("-------------------------"); 
+	
+	}
+}

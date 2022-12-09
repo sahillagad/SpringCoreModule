@@ -1,0 +1,27 @@
+package com.masai;
+
+public class Travel {
+
+	private Vechical v1;
+	private int numberOfPerson;
+	
+	// constructor injuction
+	public Travel(Vechical v1, int numberOfPerson) {
+		super();
+		this.v1 = v1;
+		this.numberOfPerson = numberOfPerson;
+	}
+	
+	
+	public void journy() {
+		
+		System.out.println("Journy Started....");
+		System.out.println("I Journy "+numberOfPerson+" Person"); 
+		v1.go();
+		
+		
+		
+		
+	}
+	
+}

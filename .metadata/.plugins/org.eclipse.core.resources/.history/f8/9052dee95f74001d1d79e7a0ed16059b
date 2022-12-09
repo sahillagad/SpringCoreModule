@@ -1,0 +1,17 @@
+package Com.masai1;
+
+// dependency class
+public class Car implements Vehicle{
+
+	
+	
+	public void start() {
+		
+	}
+
+	@Override
+	public void go() {
+		// TODO Auto-generated method stub
+		start();
+	}
+}

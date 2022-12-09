@@ -1,0 +1,42 @@
+package Presentation;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import Bean.Student;
+import Service.StudentService;
+import Service.StudentServiceImpl;
+
+public class addStudent {
+
+	public static void main(String[] args) {
+		
+	 
+		ApplicationContext ap=new ClassPathXmlApplicationContext("applicationContext.xml");
+		
+	    Student student=(Student)ap.getBean("sObj");
+		
+	   
+	    student.setName("Sahil");
+	    student.setMarks(550);
+		
+		
+StudentServiceImpl service=(StudentServiceImpl)ap.getBean("StudentService");
+
+service.persistStudent(student);
+
+
+System.out.println("---------Find Student--------------");
+ 
+Student student2= service.findStudent(1);
+ System.out.println(student2);
+
+System.out.println("---------Updae Student---------");
+
+student2.setMarks(100);
+student2.setName("Tom");
+service.updateStudent(student2);
+
+		
+	}
+}

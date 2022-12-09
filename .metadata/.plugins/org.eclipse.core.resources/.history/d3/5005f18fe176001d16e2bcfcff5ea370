@@ -1,0 +1,35 @@
+package com.masai;
+
+import java.util.List;
+
+public class A {
+
+	
+	//Collection Dependency
+	private int[] arr;
+
+	
+
+
+
+
+	public void setArr(int[] arr) {
+		this.arr = arr;
+	}
+
+
+
+
+
+
+	public void showA() {
+		System.out.println("inside showA of A");
+		System.out.println(names);
+		
+		
+		
+	}
+	
+	
+	
+}

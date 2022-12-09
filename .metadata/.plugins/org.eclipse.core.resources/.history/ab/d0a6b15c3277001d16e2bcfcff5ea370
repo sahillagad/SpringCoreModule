@@ -1,0 +1,17 @@
+package Service;
+
+import Bean.Student;
+import Dao.StudentService;
+
+public class StudentServiceImpl implements StudentService{
+
+	@Override
+	public boolean RegisteredStudent(Student student) {
+		
+		return false;
+	}
+
+	
+	
+}
+

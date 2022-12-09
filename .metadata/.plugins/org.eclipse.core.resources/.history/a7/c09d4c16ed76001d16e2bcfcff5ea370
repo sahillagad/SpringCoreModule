@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context" xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"> <!-- bean definitions here -->
+
+ 
+ 	
+ 	
+ 	<bean id="s1" class="com.masai.Student"> 
+ 
+ 	
+ 	  <constructor-arg  name="roll" value="1"/>
+ 	  <constructor-arg  name="name" value="Ram"/>
+ 	  <constructor-arg  name="marks" value="700"/> 
+ 	</bean>
+ 	
+ 	 	<bean id="s2" class="com.masai.Student"> 
+ 	  <constructor-arg  name="roll" value="2"/>
+ 	  <constructor-arg  name="name" value="Rani"/>
+ 	  <constructor-arg  name="marks" value="546"/> 
+ 	</bean>
+ 	
+ 	 	<bean id="s3" class="com.masai.Student"> 
+ 	  <constructor-arg  name="roll" value="3"/>
+ 	  <constructor-arg  name="name" value="Sahil"/>
+ 	  <constructor-arg  name="marks" value="567"/> 
+ 	</bean>
+ 	
+ 	 	<bean id="s4" class="com.masai.Student"> 
+ 	  <constructor-arg  name="roll" value="4"/>
+ 	  <constructor-arg  name="name" value="Pramila"/>
+ 	  <constructor-arg  name="marks" value="590"/> 
+ 	</bean>
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+
+   
+   <bean id="cObj" class="com.masai.College"> 
+      
+       <constructor-arg value="BirlaCollege" />  
+        
+        <property name="students">
+         <list>
+                <ref bean="s1"/>
+                <ref bean="s2"/>
+                <ref bean="s3"/>
+                 <ref bean="s4"/>  
+         </list>
+        </property>       
+   </bean>
+   
+           
+   
+ 
+</beans>

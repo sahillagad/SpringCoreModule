@@ -1,0 +1,26 @@
+package Com.Masai;
+
+//Dependent Class
+public class B {
+	
+
+	 A a=new A(); // Has-A RelationShip 
+	
+	
+	public void funB() {
+	System.err.println("I am Inside The Fun B oF Class B"); 	
+	a.funA();	
+		
+		
+	}
+	
+	
+	public void funC() {
+		System.err.println("I am Inside The Fun C oF Class B"); 		
+ 		a.funA();
+		
+		
+	}
+	
+	
+}

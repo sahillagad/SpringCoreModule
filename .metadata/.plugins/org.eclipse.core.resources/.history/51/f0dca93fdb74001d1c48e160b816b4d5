@@ -1,0 +1,12 @@
+package Com.masai1;
+
+public class Travel {
+
+	
+	public void go() {
+		System.out.println("I Am Start Journy With");
+		
+		
+		
+	}
+}

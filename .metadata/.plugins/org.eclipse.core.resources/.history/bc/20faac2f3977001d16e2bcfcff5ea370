@@ -1,0 +1,42 @@
+package Dao;
+
+import java.util.List;
+
+
+import Bean.Student;
+
+
+public class StudentServiceImpl implements StudentDao{
+
+	@Override
+	public void persistStudent(Student student) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public Student findStudent(int eid) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void updateStudent(Student student) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void deleteStudent(Student student) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	
+	
+
+
+	
+	
+}
+

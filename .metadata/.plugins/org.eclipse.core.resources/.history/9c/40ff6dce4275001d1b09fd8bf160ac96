@@ -1,0 +1,23 @@
+package com.masai;
+
+import java.sql.Date;
+import java.time.LocalDate;
+import java.time.ZoneId;
+import java.time.LocalDate;
+import java.time.ZoneId;
+
+import javax.xml.crypto.Data;
+
+public class Student {
+
+	private int roll;
+	private String name;
+	private String add;
+       
+	
+	
+	
+	
+	
+	
+}

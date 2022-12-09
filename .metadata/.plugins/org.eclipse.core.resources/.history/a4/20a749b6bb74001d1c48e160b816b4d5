@@ -1,0 +1,19 @@
+package Com.Masai2;
+
+
+public class B extends A {
+
+	public void funB(){
+		
+		System.err.println("I am Inside The Fun B oF Class B"); 	
+		funA();		
+	
+	}
+	
+	public void funC(){
+	
+		System.err.println("I am Inside The Fun C oF Class B"); 		
+ 		funA();
+
+	}
+}

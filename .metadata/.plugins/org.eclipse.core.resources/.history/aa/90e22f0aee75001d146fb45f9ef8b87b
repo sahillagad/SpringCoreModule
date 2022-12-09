@@ -1,0 +1,27 @@
+package DataAccessLayer;
+
+import javax.persistence.EntityManager;
+
+import Entity.Account;
+import Utility.EMUtility;
+
+public class DAOBean {
+
+	
+	public static DAOBean () {
+		
+		
+		EntityManager em=EMUtility.provideEntityManager();
+		
+		
+		
+		 
+		
+		
+		
+		
+		
+		
+		
+	}
+}

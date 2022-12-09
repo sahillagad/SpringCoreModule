@@ -1,0 +1,28 @@
+package com.masai;
+
+public class Demo {
+
+	public static void main(String[] args) {
+		
+		
+		
+		vehical vehical=new Car();
+		
+		Travel travel=new Travel();
+	    travel.setVehical(vehical);
+
+	    travel.getJourny();
+	    
+	    
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+}
